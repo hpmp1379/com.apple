@@ -1,0 +1,86 @@
+/* Apple Common Css */
+@charset 'UTF-8';
+
+body{
+    font-family: ;
+    font-size: 14px;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: ;
+    font-weight: 700;
+}
+h2 {font-size: ;}
+h3 {font-size: ;}
+h4 {font-size: ;}
+h5 {font-size: ;}
+h6 {font-size: ;}
+
+a {color: inherit;}
+
+/* Header */
+header {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Section */
+section {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* -------------Header GNB-NAV bar ------------*/
+.hdrWrap {}
+.navBar {
+    width: 100%;
+    background-color: #333;
+    color: #eee;
+}
+.navBar header{
+    position: relative;
+}
+.navBar h1{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+.navBar img {
+    width: 20px;
+    vertical-align: baseline;
+}
+.navBar nav{
+    line-height: 25px;
+    position: absolute;
+    right: 0; top: 0;
+}
+.navBar a {
+    margin-left: 20px;
+}
+
+.gnbBar {
+    width: 100%;
+    background-color: #111;
+    color: #ccc;
+}
+.gnb {
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+}
+/* .gnb li:not(:first-child){ */
+.gnb li {
+    color: #aaa;
+    transition: color 0.3s;
+}
+.gnb li:hover {
+    color: #fff;
+}

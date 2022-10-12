@@ -1,0 +1,13 @@
+/* Index.html Responsive */
+
+/* Mobile Test */
+@media (min-width:720px){
+    .hdrWrap header{
+        color: red;
+    }
+}
+@media (min-width:1200px){
+    .hdrWrap header {
+        color: blue;
+    }
+}
