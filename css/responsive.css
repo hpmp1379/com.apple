@@ -1,13 +1,52 @@
 /* Index.html Responsive */
 
-/* Mobile Test */
+@media (max-width:1200px){
+    .hdrWrap {
+        font-size: 12px;
+    }
+}
 @media (max-width:768px){
     .hdrWrap header {
-        color: blue;
+        font-size: 14px;
+    }
+    .navBar h1{
+        font-size: 18px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .navBar img {
+        width: 20px;
+        vertical-align: baseline;
+    }
+    .navBar nav{
+        line-height: 40px;
+        position: absolute;
+        left: 0; top: 0;
+    }
+    .navBar nav a {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+    /* add hamburger icon here */
+    .navBar nav::after{
+        display: block;
+        content: '';
+        width: 10px; height: 10px;
+        outline: 1px solid red;
+        position: absolute;
+        right: 0;top: 0;
+    }
+    .gnbBar {
+        display: none;
     }
 }
 @media (max-width:360px){
-    .hdrWrap header{
-        color: red;
+    .navBar h1{
+        font-size: 0;
     }
+    .navBar img {
+        vertical-align: middle;
+    }
+    .navBar nav a:first-child{
+        display: none;}
 }

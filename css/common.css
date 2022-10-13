@@ -2,14 +2,14 @@
 @charset 'UTF-8';
 
 body{
-    font-family: ;
+    /* font-family: ; */
     font-size: 14px;
 }
 h1,h2,h3,h4,h5,h6 {
-    font-family: ;
+    /* font-family: ; */
     font-weight: 700;
 }
-h2 {font-size: ;}
+h2 {font-size: 96px;}
 h3 {font-size: ;}
 h4 {font-size: ;}
 h5 {font-size: ;}
@@ -39,15 +39,16 @@ footer {
 }
 
 /* -------------Header GNB-NAV bar ------------*/
-.hdrWrap {}
+.hdrWrap {
+    width: 100vw; top: 0; left: 0;
+    position: fixed;
+}
 .navBar {
     width: 100%;
     background-color: #333;
     color: #eee;
 }
-.navBar header{
-    position: relative;
-}
+.navBar header{position: relative; outline: 2px solid green;}
 .navBar h1{
     font-size: 20px;
     line-height: 30px;
@@ -62,25 +63,39 @@ footer {
     position: absolute;
     right: 0; top: 0;
 }
-.navBar a {
-    margin-left: 20px;
-}
+.navBar nav a { margin-left: 20px;}
+.navBar nav a:first-child:hover{text-decoration: underline;}
 
+/* GNB 마우스 올렸을시 DropDown Menu */
 .gnbBar {
     width: 100%;
+    height: 40px;
     background-color: #111;
     color: #ccc;
 }
 .gnb {
     display: flex;
     justify-content: space-between;
+    text-align: center;
     line-height: 40px;
 }
-/* .gnb li:not(:first-child){ */
-.gnb li {
+.gnb > li > a {
     color: #aaa;
     transition: color 0.3s;
 }
-.gnb li:hover {
+.gnb > li > a:hover {
     color: #fff;
+}
+.sub {
+    text-align-last: left;
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 0 0 10px 10px;
+    
+    display: none;
+}
+.sub li {
+    color: #333;
+    line-height: 30px;
 }
