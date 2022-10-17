@@ -1,4 +1,5 @@
 /* Apple Common Css */
+
 @charset 'UTF-8';
 
 body{
@@ -10,10 +11,10 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
 }
 h2 {font-size: 96px;}
-h3 {font-size: ;}
-h4 {font-size: ;}
-h5 {font-size: ;}
-h6 {font-size: ;}
+h3 {font-size: 36px;}
+h4 {font-size: 24px;}
+/* h5 {font-size: ;} */
+/* h6 {font-size: ;} */
 
 a {color: inherit;}
 
@@ -99,3 +100,75 @@ footer {
     color: #333;
     line-height: 30px;
 }
+/* ================ End of Header ================= */
+/* ------------------- FOOTER --------------------*/
+.ftrWrap {
+    background: #111;
+    color: #fff;
+    padding: 80px 0;
+}
+.ftrWrap footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Footer Top */
+.ftr_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logoSns {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoSns a {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0 10px; 
+    color: #999;
+    transition: color 0.2s;
+}
+.logoSns a:hover {color: #eee;}
+
+.ftr_sub {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    flex: 10;
+}
+ul.submenu {}
+li.category { text-decoration: underline;}
+.submenu > li:not(.category) {margin-top: 10px;}
+
+/* Footer Bottom */
+.ftr_bot {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ftr_bot::before {
+    display: block;
+    content: '';
+    width: 100%; height: 1px;
+    background: #fff;
+    margin: 40px 0;
+}
+.ftr_left {width: 50%;}
+.ftr_left ul {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+}
+.ftr_left ul li {margin-right: 20px;}
+
+.ftr_right {
+    width: 50%;
+    text-align: right;
+}
+.ftr_right address { margin-top: 20px;}
+/* ================ End of Footer =============== */
