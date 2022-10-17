@@ -9,10 +9,11 @@ body{
 h1,h2,h3,h4,h5,h6 {
     /* font-family: ; */
     font-weight: 700;
+    font-weight: 900;
 }
-h2 {font-size: 96px;}
+h2 {font-size: 120px;}
 h3 {font-size: 36px;}
-h4 {font-size: 24px;}
+h4 {font-size: 20px;}
 /* h5 {font-size: ;} */
 /* h6 {font-size: ;} */
 
@@ -49,7 +50,7 @@ footer {
     background-color: #333;
     color: #eee;
 }
-.navBar header{position: relative; outline: 2px solid green;}
+.navBar header{position: relative;}
 .navBar h1{
     font-size: 20px;
     line-height: 30px;
@@ -76,7 +77,7 @@ footer {
 }
 .gnb {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     line-height: 40px;
 }
@@ -100,6 +101,7 @@ footer {
     color: #333;
     line-height: 30px;
 }
+.sub li:hover {text-decoration: underline;}
 /* ================ End of Header ================= */
 /* ------------------- FOOTER --------------------*/
 .ftrWrap {

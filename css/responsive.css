@@ -1,9 +1,7 @@
 /* Index.html Responsive */
 
 @media (max-width:1200px){
-    .hdrWrap {
-        font-size: 12px;
-    }
+    .hdrWrap {font-size: 12px;}
 }
 @media (max-width:1024px){}
 @media (max-width:768px){
@@ -40,6 +38,9 @@
     .gnbBar {
         display: none;
     }
+
+    .mainWrap {}
+    .mainImg {margin-top: 40px;}
 }
 @media (max-width:360px){
     .navBar h1{

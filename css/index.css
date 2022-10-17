@@ -3,7 +3,7 @@
 
 
 /* Main Section */
-.mainWrap {}
+.mainWrap {position: relative; z-index: -1;}
 .mainImg {
     width: 100%; height: 2194px;
     background: url('../img/main_img.jpg');
@@ -13,10 +13,16 @@
     background-position: center 300px;
     margin-top: 70px;
 }
-.main {position: relative; outline: 1px solid red;}
-.main h2 {
+.main {
     position: absolute;
-    top: 0; left: 0;
+    top: 0; left: 0; right: 0;
+    text-align: center;
+}
+.main h2 {
+    color: white; 
+    line-height: 100px; 
+    margin-top: 80px;
+    text-shadow: 0 70px 0px rgba(33,33,33,.7), 0 140px 0 rgba(55,55,55,0.2);
 }
 
 /* ------------ Content #1 슬라이더1  --------------*/
@@ -72,17 +78,27 @@
 .cntSupport {padding: 80px;}
 .cntSupport header {text-align: center;}
 .cntSupport header p{ margin-top: 20px;}
-
 .cntSupport section {
     margin-top: 40px;
     display: flex;
     justify-content: space-around;
 }
-.cntSupport article {
-    text-align: center;
-    width: 180px;
-    outline: 1px solid red;
+.cntSupport article {width: 180px;}
+.cntSupport article:hover .texts {text-shadow: 1px 1px 5px rgba(200, 0, 255, 0.2);color: #111;}
+.cntSupport article:hover .texts a {margin-left: 10px;}
+.cntSupport article:hover .texts i {margin-left: 10px;}
+.cntSupport .image {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.cntSupport .image {height: 180px;}
-.cntSupport .texts {margin-top: 20px;}
+.support1 {background-image: url('../img/support1.png');}
+.support2 {background-image: url('../img/support2.png');}
+.support3 {background-image: url('../img/support3.png');}
+.cntSupport .texts {margin-top: 20px; color: #ccc;}
+.cntSupport .texts a {display: block; text-align: center; transition: margin-left 0.3s}
+.cntSupport .texts i {font-size: 14px;vertical-align: middle; transition: margin-left 0.3s;}
 /* ============== End of Content#6 ============== */
