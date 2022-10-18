@@ -5,6 +5,7 @@
 body{
     /* font-family: ; */
     font-size: 14px;
+    min-width: 360px;
 }
 h1,h2,h3,h4,h5,h6 {
     /* font-family: ; */
@@ -137,7 +138,6 @@ footer {
 .logoSns a:hover {color: #eee;}
 
 .ftr_sub {
-    width: 20%;
     display: flex;
     justify-content: space-around;
     flex: 10;
@@ -166,7 +166,7 @@ li.category { text-decoration: underline;}
     display: flex;
     margin: 20px 0;
 }
-.ftr_left ul li {margin-right: 20px;}
+.ftr_left ul li:not(:last-of-type) {margin-right: 20px;}
 
 .ftr_right {
     width: 50%;
