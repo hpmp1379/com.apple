@@ -1,11 +1,11 @@
 /* Apple Common Css */
 
 @charset 'UTF-8';
-
-body{
+html,body{
     /* font-family: ; */
     font-size: 14px;
     min-width: 360px;
+    overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6 {
     /* font-family: ; */
@@ -44,7 +44,7 @@ footer {
 /* -------------Header GNB-NAV bar ------------*/
 .hdrWrap {
     width: 100vw; top: 0; left: 0;
-    position: fixed;
+    position: fixed; z-index: 10;
 }
 .navBar {
     width: 100%;
@@ -57,7 +57,7 @@ footer {
     line-height: 30px;
     text-align: center;
 }
-.navBar img {
+.navBar img, .logoSns img {
     width: 20px;
     vertical-align: baseline;
 }
@@ -166,7 +166,7 @@ li.category { text-decoration: underline;}
     display: flex;
     margin: 20px 0;
 }
-.ftr_left ul li:not(:last-of-type) {margin-right: 20px;}
+.ftr_left ul li {margin-right: 20px;}
 
 .ftr_right {
     width: 50%;

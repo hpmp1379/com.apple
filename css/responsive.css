@@ -3,15 +3,33 @@
 @media (max-width:1200px){
     .hdrWrap {font-size: 12px;}
 
+    /* mainWrap */
+    .mainWrap h2 {font-size: 108px;}
+    /****End of Main****/
+
+    /* Content 3 */
+    /****End of Content 3****/
+
     .ftrWrap {font-size: 12px;}
 }
 @media (max-width:1024px){
+
+    /* mainWrap */
+    .mainWrap h2 {font-size: 96px;}
+    /****End of Main****/
+
+    /* Content 3 */
+    /****End of Content 3****/
+
     .logoSns a {margin: 0 5px;}
     .ftrWrap .submenu {font-size: 11px;}
     .ftr_left {width: 60%;}
     .ftr_right {width: 40%;}
 }
 @media (max-width:768px){
+    /* common css */
+    h3 {font-size: 24px;}
+
     .hdrWrap header {font-size: 14px;}
     .navBar h1{
         font-size: 18px;
@@ -44,8 +62,22 @@
         display: none;
     }
     
-    .mainWrap {}
-    .mainImg {margin-top: 40px;}
+    /* mainWrap */
+    .mainWrap {
+        margin-top: 40px;
+        background-position: center 250px;
+    }
+    .mainWrap h2 {
+        width: 55%;
+        font-size: 72px;
+        text-shadow: 0 55px 0px rgba(33,33,33,.7), 0 110px 0 rgba(55,55,55,0.2);
+    }
+    /****End of Main****/
+
+    /* Content 6 */
+    .cntSupport section {flex-wrap: wrap; row-gap: 40px;}
+    .cntSupport article {width: 50%;}
+    /*****End Content 6 *****/
 
     /* footer */
     .ftrWrap {padding: 40px 0;}
@@ -68,11 +100,30 @@
     .ftr_left ul {margin-top: 10px; width: 100%;}
     .ftr_right {width: 100%; text-align: left;margin-top: 20px;}
     .ftr_right address {margin-top: 10px;}
+    /***** End Footer  *****/
 }
 @media (max-width:414px){
+    /* mainWrap */
+    .mainWrap h2 {
+        width: 65%;
+        font-size: 60px;
+        text-shadow: 0 50px 0px rgba(33,33,33,.7), 0 100px 0 rgba(55,55,55,0.2);
+    }
+    /****End of Main****/
+    /****End of Main****/
+    /* Content 3 */
+    .cntBenefit header p {font-size: 12px;}
+    /****End of Content 3****/
+    /* Content 6 */
+    .cntSupport header p {font-size: 12px;}
+    .cntSupport article {width: 100%;}
+    /****End of Content 6****/
     /* footer */
     .logoSns a {font-size: 20px; line-height: 30px; margin: 0 3px;}
     .submenu {padding: 0 5%;}
+    .ftr_left ul {flex-wrap: wrap;}
+    .ftr_left ul li {width: 50%;}
+    /****End Footer****/
 }
 @media (max-width:360px){
     .navBar h1{

@@ -3,26 +3,31 @@
 
 
 /* Main Section */
-.mainWrap {position: relative; z-index: -1;}
-.mainImg {
-    width: 100%; height: 2194px;
+.mainWrap {
+    width: 100%; 
+    height: 2194px;
     background: url('../img/main_img.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #000;
-    background-position: center 300px;
+    background-position: center 330px;
     margin-top: 70px;
+    position: relative;
 }
-.main {
+h2 {
+    /* width: 100%; */
+    line-height: 120px;
+    top: 0;left: 50%;
+    transform: translateX(-50%);
     position: absolute;
-    top: 0; left: 0; right: 0;
     text-align: center;
-}
-.main h2 {
-    color: white; 
-    line-height: 100px; 
-    margin-top: 80px;
-    text-shadow: 0 70px 0px rgba(33,33,33,.7), 0 140px 0 rgba(55,55,55,0.2);
+    margin-top: 60px;
+    z-index: 2;
+    color: white;
+    text-shadow: 0 90px 0px rgba(33,33,33,.7), 0 180px 0 rgba(55,55,55,0.2);
+    background: linear-gradient(90deg,#4a03a1, #c800ff,#00c8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
 }
 
 /* ------------ Content #1 슬라이더1  --------------*/
@@ -32,10 +37,13 @@
 /* ============== End of Content#2 ============== */
 
 /* ------------ Content #3 서비스 혜택  --------------*/
-.cntBenefit {padding: 160px;}
+.cntBenefit {padding: 160px 0;}
 .cntBenefit header {text-align: center;}
 .cntBenefit header p {margin-top: 20px;}
-.cntBenefit section {margin-top: 80px;}
+.cntBenefit section {
+    margin-top: 80px;
+    position: relative;
+}
 
 .cntBenefit .topNbot {
     display: flex;
@@ -62,8 +70,12 @@
     margin-top: 120px;
 }
 .slideBG {
-    width: 100%; height: 40px;
+    width: 100vw; height: 480px;
     background: #333;
+    margin-left: calc((100vw - 100%) / -2);
+    position: absolute;
+    top: 280px; left: 0;
+    z-index: -10;
 }
 /* ============== End of Content#3 ============== */
 
@@ -75,7 +87,7 @@
 /* ============== End of Content#5 ============== */
 
 /* ------------ Content #6 고객지원  --------------*/
-.cntSupport {padding: 80px;}
+.cntSupport {padding: 80px 0;}
 .cntSupport header {text-align: center;}
 .cntSupport header p{ margin-top: 20px;}
 .cntSupport section {
