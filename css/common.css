@@ -48,7 +48,7 @@ footer {
 }
 .navBar {
     width: 100%;
-    background-color: #333;
+    background-color: #000;
     color: #eee;
 }
 .navBar header{position: relative;}
@@ -73,12 +73,12 @@ footer {
 .gnbBar {
     width: 100%;
     height: 40px;
-    background-color: #111;
+    background-color: #000;
     color: #ccc;
 }
 .gnb {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     line-height: 40px;
 }
@@ -89,18 +89,26 @@ footer {
 .gnb > li > a:hover {
     color: #fff;
 }
-.sub {
-    text-align-last: left;
-    background: #eee;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 0 0 10px 10px;
-    
-    display: none;
+.gnb > li {
+    position: relative;
+    width: calc(100% / 8);
 }
-.sub li {
-    color: #333;
-    line-height: 30px;
+ul.sub {
+    text-align-last: left;
+    background: transparent;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    display: none;
+    box-shadow: inset 0 0px 5px rgba(255,255,255, 0.3);
+}
+ul.sub li {
+    color: #ccc;
+    line-height: 25px;
+    margin-left: 10px;
 }
 .sub li:hover {text-decoration: underline;}
 /* ================ End of Header ================= */
