@@ -12,6 +12,7 @@
 
     .ftrWrap {font-size: 12px;}
 }
+/* --------------------------------------------------------------- 1024 */
 @media (max-width:1024px){
 
     /* mainWrap */
@@ -20,6 +21,8 @@
 
     /* Content 3 */
     .cntBenefit .smallImg{background-position: left;}
+    .topNbot > .image {width: calc(100% / 12 * 8 - 10px);}
+    .smallImg {width: calc(100% / 12 * 4 - 10px);}
     /****End of Content 3****/
 
     .logoSns a {margin: 0 5px;}
@@ -27,7 +30,8 @@
     .ftr_left {width: 60%;}
     .ftr_right {width: 40%;}
 }
-@media (max-width:768px){
+/* ----------------------------------------------------------------- 768 */
+@media (max-width:768px){ 
     /* common css */
     h3 {font-size: 24px;}
 
@@ -37,32 +41,31 @@
         line-height: 40px;
         text-align: center;
     }
+    .navBar h1 span {display: none;}
     .navBar img {
         width: 20px;
-        vertical-align: baseline;
+        vertical-align: -3px;
     }
-    .navBar nav{
-        line-height: 40px;
-        position: absolute;
-        left: 0; top: 0;
-    }
+    .navBar nav{line-height: 40px;}
     .navBar nav a {
         margin-left: 0;
         margin-right: 5px;
     }
     /* add hamburger icon here */
-    .navBar nav::after{
+    
+    .navBar header {border: 1px solid yellow;}
+    .navBar .menuButton::after{
         display: block;
         content: '';
         width: 10px; height: 10px;
         outline: 1px solid red;
         position: absolute;
-        right: 0;top: 0;
+        left: 10px;top: 0;
     }
-    .gnbBar {
-        display: none;
-    }
-    
+
+    .gnbBar {display: none;}
+    /* End Common */
+
     /* mainWrap */
     .mainWrap {
         margin-top: 40px;
@@ -81,14 +84,17 @@
     .topNbot {position: relative;}
     .topNbot .texts {font-size: 20px; bottom: 40px;}
     .cntBenefit .bot {margin-top: 600px;}
-    .smallImg{
+    .cntBenefit .smallImg{
         position: absolute; 
         width: 50%;
         top: 400px;
         margin-top: 0;
+        background-position: center;
     }
     .small1 {left: 10px;}
     .small2 {right: 10px;}
+    .slideBG {top: 200px;}
+    .m_slideBG {display: block;}
     /****End of Content 3****/
 
     /* Content 6 */
@@ -119,6 +125,7 @@
     .ftr_right address {margin-top: 10px;}
     /***** End Footer  *****/
 }
+/* ------------------------------------------------------------------- 414 */
 @media (max-width:414px){
     /* mainWrap */
     .mainWrap h2 {
@@ -129,7 +136,14 @@
     /****End of Main****/
     /****End of Main****/
     /* Content 3 */
+    .cntBenefit {height: 2150px;}
     .cntBenefit header p {font-size: 12px;}
+    .cntBenefit .bot {margin-top: 520px;}
+    .cntBenefit .smallImg{
+        width: 80%; height: 240px;
+    }
+    .slideBG{top:80px;}
+    .m_slideBG {top: 1040px;}
     /****End of Content 3****/
     /* Content 6 */
     .cntSupport header p {font-size: 12px;}
