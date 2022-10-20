@@ -71,7 +71,7 @@ footer {
 }
 .navBar nav a { margin-left: 20px;}
 .navBar nav a:first-child:hover{text-decoration: underline;}
-.navBar .menuBtn {display: none;}
+.navBar .menuBtn {display: none; cursor: pointer;}
 .menuOpen {
     width: 40vw; height: 100vh;
     background: rgba(0,0,0,0.8);
