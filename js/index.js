@@ -13,7 +13,6 @@ $(function(){
             $header.find('.gnb .sub').removeClass('active');
         }
     })
-
     //gnb sub menu drop down
     let subDropDown = () => {
         $('.gnb li').mouseover(function(){
@@ -27,6 +26,17 @@ $(function(){
     }
     //load 할때 subDropDown 적용
     if (winW >= 768){subDropDown();}
+
+    //hdrMenu open/close onclick
+    let $hdrMenu = $('body').find('.hdrWrap .hdrMenu'),
+        $menuBtn = $('body').find('.hdrWrap .menuBtn'),
+        $menuClose = $hdrMenu.find('.menuClose');
+    $menuBtn.on('click',function(){
+        $hdrMenu.toggleClass('active');
+    })
+    $menuClose.on('click',function(){
+        $hdrMenu.toggleClass('active');
+    })
 
     // End of Header
 

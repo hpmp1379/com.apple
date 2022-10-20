@@ -1,4 +1,5 @@
 
+
 /* Main Section */
 .mainWrap {
     width: 100%; 
@@ -21,7 +22,7 @@ h2 {
     margin-top: 60px;
     z-index: 2;
     color: white;
-    text-shadow: 0 90px 0px rgba(33,33,33,.7), 0 180px 0 rgba(55,55,55,0.2);
+    text-shadow: 0 90px 0px rgba(55,55,55,0.8), 0 180px 0 rgba(55,55,55,0.5);
     background: linear-gradient(90deg,#4a03a1, #c800ff,#00c8ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
@@ -54,6 +55,7 @@ h2 {
     background-position: center;
     background-size: cover;
     position: relative;
+    box-shadow: 0 0 5px rgba(33,33,33,0.3), inset 0 0 5px rgba(255,255,255,0.3);
 }
 .big1 {background-image: url('../img/cnt03_appletv.png');}
 .small1 {background-image: url('../img/cnt03_appletv2.png');}
@@ -121,7 +123,7 @@ h2 {
 .cntSupport article {width: 180px; height: 200px; position: relative;}
 .cntSupport article:hover .image {top: -20px;}
 .cntSupport article:hover .texts {}
-.cntSupport article:hover .texts a {margin-left: 10px;}
+.cntSupport article:hover .texts a {margin-left: 10px; color: #000;}
 .cntSupport article:hover .texts i {margin-left: 10px;}
 .cntSupport .image {
     width: 140px; height: 140px;
