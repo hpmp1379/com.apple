@@ -71,6 +71,14 @@ footer {
 }
 .navBar nav a { margin-left: 20px;}
 .navBar nav a:first-child:hover{text-decoration: underline;}
+.navBar .menuBtn {display: none;}
+.menuOpen {
+    width: 40vw; height: 100vh;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0; left: 0;
+    display: none;
+}
 
 /* GNB 마우스 올렸을시 DropDown Menu */
 .gnbBar {

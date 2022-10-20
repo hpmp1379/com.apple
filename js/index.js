@@ -8,6 +8,7 @@ $(function(){
         winW = $(window).width();
         if (winW >= 768){
             $header.find('.gnb .sub').addClass('active');
+            subDropDown();
         }else {
             $header.find('.gnb .sub').removeClass('active');
         }
